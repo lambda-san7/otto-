@@ -3,7 +3,7 @@ import os
 import sounddevice as sd
 import numpy as np
 
-window = pygame.display.set_mode((500,500))
+window = pygame.display.set_mode((480,270))
 
 pygame.display.set_caption("Otter")
 
@@ -43,8 +43,8 @@ while running:
             running = False
             stream.stop()
             stream.close()
-    window.fill((50,50,50))
-    window.blit(otter.sprite, (0,140))
+    window.fill((0,255,0))
+    window.blit(otter.sprite, (0,0))
     pygame.display.update()
 
 pygame.quit
